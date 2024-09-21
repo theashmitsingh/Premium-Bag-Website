@@ -9,12 +9,12 @@ const userSchema = mongoose.Schema ({
     email: String,
     password: String, 
     cart: {
-        type: Array,
+        type: [String],
         default: []
     },
     isadmin: Boolean,
     orders: {
-        type: Arrays,
+        type: [String],
         default: []
     },
     contact: Number,

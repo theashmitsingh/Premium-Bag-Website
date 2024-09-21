@@ -24,12 +24,9 @@ app.use('/owners', ownersRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 
-
 app.get("/", (req, res, next) => {
     res.send("Hello");
 });
-
-
 
 app.listen(port, () => {
     console.log(`Server is listening to port ${port}`);
